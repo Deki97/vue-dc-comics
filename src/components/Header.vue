@@ -1,6 +1,22 @@
 <template>
     <header>
-        <img src="../assets/img/dc-logo.png" alt="DC Logo">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="../assets/img/dc-logo.png" alt="DC Logo">
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li v-for="(menu, index) in menus" :key="index">
+                            <a :href="menu.url">
+                                {{ menu.text }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 </template>
 
@@ -69,5 +85,33 @@ export default {
 
 
 <style lang="scss" scoped>
+@import '../style/general';
 
+header {
+    height: 100px;
+}
+
+.container {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        line-height: 100px;
+
+        .logo {
+            height: 100%;
+            width: 80px;
+
+            img {
+                vertical-align: middle;
+            }
+        }
+
+        .menu li {
+            display: inline-block;
+            font-size: 12px;
+            padding: 0 10px;
+        }
+    }
+    
+}
 </style>

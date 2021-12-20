@@ -39,6 +39,6 @@ export default {
 // @import '../style/variables';
 // @import '../style/mixins';
 // @import '../style/general';
-@import '../style/common';
+@import './style/common';
 
 </style>
