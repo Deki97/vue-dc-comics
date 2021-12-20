@@ -88,6 +88,7 @@ export default {
 
 header {
     height: 100px;
+    background-color: white;
 }
 
 .container {
@@ -98,7 +99,7 @@ header {
 
         .logo {
             height: 100%;
-            width: 80px;
+            width: 70px;
 
             img {
                 vertical-align: middle;
@@ -109,6 +110,7 @@ header {
             display: inline-block;
             font-size: 12px;
             padding: 0 10px;
+            font-weight: 400;
         }
     }
     
