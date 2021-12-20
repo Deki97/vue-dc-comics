@@ -4,8 +4,12 @@
 
       <Main />
 
+
       <PreFooter />
+
       <Footer />
+
+      <PostFooter />
   </div>
 </template>
 
@@ -13,8 +17,9 @@
 <script>
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
-import Footer from "./components/Footer.vue";
 import PreFooter from "./components/PreFooter.vue";
+import Footer from "./components/Footer.vue";
+import PostFooter from "./components/PostFooter.vue";
 
 
 export default {
@@ -22,8 +27,9 @@ export default {
   components: {
     Header,
     Main,
+    PreFooter,
     Footer,
-    PreFooter
+    PostFooter
   },
 };
 </script>
