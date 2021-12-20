@@ -85,7 +85,6 @@ export default {
 
 
 <style lang="scss" scoped>
-@import '../style/general';
 
 header {
     height: 100px;

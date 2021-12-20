@@ -38,7 +38,7 @@ export default {
 <style lang="scss">
 // @import '../style/variables';
 // @import '../style/mixins';
-// @import '../style/general';
+@import './style/general';
 @import './style/common';
 
 </style>
