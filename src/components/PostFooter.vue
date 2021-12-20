@@ -1,7 +1,7 @@
 <template>
-    <footer>
+    <section>
         Ciao sono il postfooter
-    </footer>
+    </section>
 </template>
 
 
