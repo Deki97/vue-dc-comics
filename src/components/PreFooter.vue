@@ -63,7 +63,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 0;
+        padding: 30px;
 
         .single-link {
             display: flex;
