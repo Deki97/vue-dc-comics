@@ -117,10 +117,23 @@ main {
     color: white;
 
     .container {
+        position: relative;
+
         .current-series {
+            .current-series-target {
+                background-color: #0282f9;
+                display: inline-block;
+                font-weight: bold;
+                padding: 12px 18px;
+                position: absolute;
+                top: -20px;
+                left: 0;
+            }
+
             .comics {
                 display: flex;
                 flex-wrap: wrap;
+                padding-top: 30px;
 
                 .single-comic {
                     width: calc((100% / 6) - 20px);
