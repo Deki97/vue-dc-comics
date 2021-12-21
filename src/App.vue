@@ -2,6 +2,8 @@
   <div id="app">
       <Header />
 
+      <Banner />
+
       <Main />
 
 
@@ -16,6 +18,7 @@
 
 <script>
 import Header from "./components/Header.vue";
+import Banner from "./components/Banner.vue";
 import Main from "./components/Main.vue";
 import PreFooter from "./components/PreFooter.vue";
 import Footer from "./components/Footer.vue";
@@ -26,6 +29,7 @@ export default {
   name: "App",
   components: {
     Header,
+    Banner,
     Main,
     PreFooter,
     Footer,
