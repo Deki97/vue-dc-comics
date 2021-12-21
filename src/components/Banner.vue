@@ -15,6 +15,7 @@ export default {
 <style lang="scss" scoped>
 section {
     .banner {
+        width: 100%;
         background-image: url('../assets/img/jumbotron.jpg');
         height: 320px;
         background-position: top center;
