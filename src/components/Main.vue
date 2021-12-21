@@ -16,7 +16,9 @@
                 </div>
 
                 <div class="load-more-btn">
-                    LOAD MORE
+                    <a href="#">
+                        LOAD MORE
+                    </a>
                 </div>
             </div>
         </div>
@@ -120,6 +122,8 @@ main {
         position: relative;
 
         .current-series {
+            text-align: center;
+
             .current-series-target {
                 background-color: #0282f9;
                 display: inline-block;
@@ -138,13 +142,24 @@ main {
                 .single-comic {
                     width: calc((100% / 6) - 20px);
                     margin: 20px 10px;
+                    cursor: pointer;
 
                     .single-comic-name {
                         text-transform: uppercase;
                         font-size: 12px;
                         margin-top: 15px;
+                        text-align: left;
                     }
                 }
+            }
+
+            .load-more-btn {
+                background-color: #0282f9;
+                display: inline-block;
+                font-size: 11px;
+                font-weight: bold;
+                padding: 8px 40px;
+                margin: 15px 0;
             }
         }
     }
