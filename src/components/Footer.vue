@@ -203,6 +203,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 320px;
+    overflow: hidden;
 }
 
 .container {
