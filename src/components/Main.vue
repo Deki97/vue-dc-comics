@@ -127,8 +127,9 @@ main {
             .current-series-target {
                 background-color: #0282f9;
                 display: inline-block;
+                font-size: 20px;
                 font-weight: bold;
-                padding: 12px 18px;
+                padding: 10px 20px;
                 position: absolute;
                 top: -20px;
                 left: 0;
