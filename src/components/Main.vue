@@ -6,14 +6,11 @@
                     CURRENT SERIES
                 </div>
 
-                <div class="comics">
-                    <div class="single-comic" v-for="(comic, index) in cards" :key="index">
-                        <img :src="comic.thumb" :alt="comic.series">
-                        <div class="single-comic-name">
-                            {{ comic.series }}
-                        </div>
-                    </div>
+
+                <div class="comics-list">
+                    <SingleComic v-for="(element, index) in cards" :key="index" :comicObject="element"/>
                 </div>
+
 
                 <div class="load-more-btn">
                     <a href="#">
@@ -27,8 +24,13 @@
 
 
 <script>
+import SingleComic from "./SingleComic.vue";
+
 export default {
-    name: "Main",
+    name: 'Main',
+    components: {
+        SingleComic
+    },
     data: function() {
         return {
             cards: [
@@ -135,23 +137,10 @@ main {
                 left: 0;
             }
 
-            .comics {
+            .comics-list {
                 display: flex;
                 flex-wrap: wrap;
                 padding-top: 30px;
-
-                .single-comic {
-                    width: calc((100% / 6) - 20px);
-                    margin: 20px 10px;
-                    cursor: pointer;
-
-                    .single-comic-name {
-                        text-transform: uppercase;
-                        font-size: 12px;
-                        margin-top: 15px;
-                        text-align: left;
-                    }
-                }
             }
 
             .load-more-btn {
@@ -164,6 +153,5 @@ main {
             }
         }
     }
-
 }
 </style>
