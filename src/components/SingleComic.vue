@@ -25,6 +25,11 @@ export default {
     margin: 20px 10px;
     cursor: pointer;
 
+    .comic-image {
+        height: 160px;
+        overflow: hidden;
+    }
+
     .comic-title {
         text-transform: uppercase;
         font-size: 12px;
